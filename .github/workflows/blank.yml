@@ -28,14 +28,14 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.5.0
 
+      - name: Add tags
+        run: |
+          git tag -a v1.2.4 -m "v1.2.4"
+
       - name: Install and run auto-changelog
         run: |
           npm install -g auto-changelog
           auto-changelog
-      - name: View tags
-        run: |
-          git tag
-          git log
 
       - name: View auto-changelog
         run: cat CHANGELOG.md
