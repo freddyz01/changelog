@@ -30,6 +30,7 @@ jobs:
 
       - name: Git config
         run: |
+          git log
           git config --local user.email htetnaing.aung@squirro.com
           git config --local user.name freddyz01
           git tag -a v1.2.4 -m "v1.2.4"
