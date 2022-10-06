@@ -33,7 +33,9 @@ jobs:
           npm install -g auto-changelog
           auto-changelog
       - name: View tags
-        run: git tag
+        run: |
+          git tag
+          git log
 
       - name: View auto-changelog
         run: cat CHANGELOG.md
