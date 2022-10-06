@@ -30,8 +30,8 @@ jobs:
 
       - name: Git config
         run: |
-          git config --local user.email ${{ secrets.YOUR_GITHUB_EMAIL }}
-          git config --local user.name ${{ secrets.YOUR_GITHUB_USER }}
+          git config --local user.email htetnaing.aung@squirro.com
+          git config --local user.name freddyz01
           git tag -a v1.2.4 -m "v1.2.4"
 
       - name: Install and run auto-changelog
