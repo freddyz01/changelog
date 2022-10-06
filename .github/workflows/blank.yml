@@ -35,9 +35,6 @@ jobs:
         run: |
           git config --local user.email "$CI_EMAIL"
           git config --local user.name "$CI_USER"
-
-      - name: Add tags
-        run: |
           git tag -a v1.2.4 -m "v1.2.4"
 
       - name: Install and run auto-changelog
