@@ -35,7 +35,7 @@ jobs:
           git log
           git config --local user.email ${{github.event.pusher.email}}
           git config --local user.name ${{github.event.pusher.name}}
-          git tag -a v1.3.4 -m "v1.3.4"
+          git tag -a v1.3.5 -m "v1.3.5"
           git push origin --tags
 
       - name: Install and run auto-changelog
